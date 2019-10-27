@@ -1,7 +1,7 @@
 import express from 'express';
 import morgan from 'morgan'; 
-import Database from './database';
-import UserRoutes from './routes/user';
+import Database from './database.config';
+import UserRoutes from '../routes/user.route';
 
 const database = new Database();
 
