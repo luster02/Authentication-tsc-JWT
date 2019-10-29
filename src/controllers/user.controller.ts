@@ -113,4 +113,15 @@ export default class TestController {
         
     }
 
+    async getUser(req: Request, res: Response ){
+        const users = await User.find();
+
+        res.json({
+            ok: true,
+            users: users
+        });
+    }
+
+    
+
 }

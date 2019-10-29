@@ -7,7 +7,7 @@ const UserSchema = new Schema({
         type: String,
         required: [true, 'the name is required']
     },
-    avata: {
+    avatar: {
         type: String,
         default: 'av-1.png'
     },
